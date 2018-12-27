@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="3dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+        <FrameLayout
+            android:id="@+id/date_behavior"
+            app:layout_anchor="@+id/appbar"
+            android:adjustViewBounds="true"
+            app:layout_anchorGravity="right|end|bottom"
+            android:clickable="false"
+            android:background="@drawable/round_white"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            tools:ignore="UnusedAttribute">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/img"
+                android:background="@drawable/loading"
+                android:scaleType="centerCrop"
+                android:indeterminate="true"
+                />
+
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress_bar"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:indeterminate="true"
+                android:layout_marginTop="80dp"
+                ></ProgressBar>
+            <TextView
+                android:textColor="#fff"
+                android:id="@+id/date"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="10dp"
+                android:text="01 January 1990"
+                android:layout_gravity="right|bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="170dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="17sp"
+                android:id="@+id/title"
+                android:layout_below="@+id/img"
+                android:text="Title"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/descr"
+                android:maxLines="2"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:text="description"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="15dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/source"
+                android:layout_below="@+id/descr"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:drawablePadding="10dp"
+
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="Source"/>
+
+                    <Button
+                        android:id="@+id/details_button"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#455a64"
+                        android:text="Details"
+                        android:textColor="#fff"
+                        android:textStyle="bold"/>
+
+
+
+
+            </FrameLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

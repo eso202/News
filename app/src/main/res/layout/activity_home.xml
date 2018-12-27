@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    >
+
+
+    <ImageView
+        android:layout_width="220dp"
+        android:id="@+id/image1"
+        android:layout_height="120dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/news3"
+       />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="11dp"
+        android:src="@drawable/news6" />
+
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="220dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+
+        android:src="@drawable/news2" />
+
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="220dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="400dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/news5" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="220dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="220dp"
+        android:src="@drawable/news1" />
+
+    <ImageView
+        android:id="@+id/image6"
+        android:layout_width="220dp"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop"
+
+        android:layout_marginTop="140dp"
+        android:src="@drawable/news4" />
+
+</RelativeLayout>
